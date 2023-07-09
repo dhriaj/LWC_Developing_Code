@@ -14,12 +14,12 @@ this.assignrecord = event.target.value;
     handleclick()
     {
 const txtboxvalue=this.assignrecord;
-const inputdata = new CustomEvent('inputtext',{
+const inputtext = new CustomEvent('inputtext',{
 bubbles :true,
 composed : false,
 detail : txtboxvalue
 });
-this.dispatchEvent(inputdata);
+this.dispatchEvent(inputtext);
     }
 
 

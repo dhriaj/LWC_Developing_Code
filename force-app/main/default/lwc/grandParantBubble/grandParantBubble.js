@@ -2,13 +2,14 @@ import { LightningElement, track } from 'lwc';
 
 export default class GrandParantBubble extends LightningElement {
 
-@track valuefromparant='';
+@track valuefromGrandChild='';
 
 
-handleparant(event)
+
+handleGrandChildEvent(event)
 {
 
-this.valuefromparant=event.detail;
+this.valuefromGrandChild=event.detail;
 
 
 }
