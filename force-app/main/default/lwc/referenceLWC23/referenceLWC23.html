@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : Dheeraj Sharma
+  @group             : 
+  @last modified on  : 06-19-2023
+  @last modified by  : Dheeraj Sharma
+-->
+<template>
+   <lightning-card title="This is Lwc-ref for Summer 2023 Release test" icon-name="Standard:account">
+<div>
+<lightning-input type="text" variant="Standard" name="name" label="Enter the name" placeholder="Enter the Value" lwc:ref="nameref">
+    </lightning-input>
+<lightning-button label="Submit" onclick={handlelclick} variant="brand"></lightning-button>
+</div>
+<div lwc:ref="getvalue"></div>
+</lightning-card> 
+</template>

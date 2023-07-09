@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="CSV Donwload">
+        <template for:each={userdata} for:item="user">
+            <div key={user.username}>
+                <p>{user.Username} {user.Class}, {user.Add}</p>
+            </div>
+        </template>
+    <lightning-button variant="brand" label="Download the User Data" onclick={Donwloaddetial}></lightning-button>
+    </lightning-card>
+</template>

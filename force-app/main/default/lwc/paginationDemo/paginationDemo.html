@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Dheeraj Sharma
+  @group             : 
+  @last modified on  : 06-19-2023
+  @last modified by  : Dheeraj Sharma
+-->
+<template>
+    <lightning-card title="Pagination Demo Contact" icon-name="custom:custom63">
+        <div class="slds-var-m-around_medium">
+            <template if:true={visiblecontact}>
+                <template for:each={visiblecontact} for:item="con">
+                    <p key={con.Id}>{con.Name}</p>
+                </template>
+            </template>
+            <div slot="footer" class="slds-var-m-horizontal_medium"></div>
+            <c-pagination records={totalcontact} onupdate={updatecontacthanlder}></c-pagination>
+        </div>
+    </lightning-card>
+</template>

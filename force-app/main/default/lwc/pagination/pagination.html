@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Dheeraj Sharma
+  @group             : 
+  @last modified on  : 06-19-2023
+  @last modified by  : Dheeraj Sharma
+-->
+<template>
+    <lightning-layout>
+     <lightning-layout-item>
+      <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={Previoushandler} disabled={disbalepre}></lightning-button> 
+     </lightning-layout-item>   
+     <lightning-layout-item flexibility="grow">
+        <p>Display the roecrd {Curentpage} to {totalpage}</p>
+       </lightning-layout-item>   
+       <lightning-layout-item>
+        <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={nexthandler} disabled={dispablenext}></lightning-button> 
+       </lightning-layout-item>   
+    </lightning-layout>
+</template>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+<masterLabel>CountingUpdate</masterLabel>
+<isExposed>True</isExposed>
+<description>messgabe channel to pass another one</description>
+<lightningMessageFields>
+<fieldName>operator</fieldName>
+<description>Opertor name as follow</description>
+
+</lightningMessageFields>
+<lightningMessageFields>
+    <fieldName>Constant</fieldName>
+    <description>Constant name as follow</description>
+    
+    </lightningMessageFields>
+    
+
+</LightningMessageChannel>

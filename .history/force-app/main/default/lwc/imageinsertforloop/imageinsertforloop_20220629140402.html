@@ -1,0 +1,18 @@
+<template>
+    <lightning-carousel disable-auto-scroll>
+        <template if:true={player}>
+<template for:each={player} for:item="play">
+
+<lightning-carousel-image
+key={play.id}
+src={play.src}
+header={play.hearder}
+description={play.description}>
+href={href}
+</lightning-carousel-image>
+
+
+</template>
+        </template>
+    </lightning-carousel>
+</template>
