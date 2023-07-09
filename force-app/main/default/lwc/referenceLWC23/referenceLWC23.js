@@ -11,6 +11,7 @@ console.log('this. refewnce1',this.refs.nameref)
 const getre = this.refs.getvalue
 getre.innerHTML=`Hello ${myname}`
 console.log('getre',getre)
+console.log('getre',getre);
 
 }
 
