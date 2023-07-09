@@ -8,9 +8,5 @@ handleclickevent(event)
     {
 
 this.valuefromchild=event.detail;
-
-alert(valuefromchild);
-
-
-    }
+}
 }
