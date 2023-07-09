@@ -4,10 +4,12 @@ export default class ParantBubble extends LightningElement {
 
 @track valuefromchild=''
 
-    handleclickevent(event)
+handleclickevent(event)
     {
 
-this.valuefromchild=event.details;
+this.valuefromchild=event.detail;
+
+alert(valuefromchild);
 
 
     }

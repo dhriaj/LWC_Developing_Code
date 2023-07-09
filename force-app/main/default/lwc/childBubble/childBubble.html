@@ -1,3 +1,4 @@
+<!-- sldsValidatorIgnore -->
 <!--
   @description       : 
   @author            : Dheeraj Sharma
@@ -6,11 +7,12 @@
   @last modified by  : Dheeraj Sharma
 -->
 <template>
-    <div>
+
 <h2>
-    THis is Child LWC Buuble Example
+    THis is Child LWC Buuble Example :{txtboxvalue}
 </h2>
-Add the Text Box Value : <input id="txtid" type="text" onchange={eventchnage}/>
-<button name="Show to Value Parwnt" onclick={handleclick}></button>
-    </div>
+Add the Text Box : <lightning-input onchange={eventchnage} text="Eneter value"></lightning-input>
+
+<lightning-button variant="brand" label="Submit" onclick={handleclick}></lightning-button>
+    
 </template>

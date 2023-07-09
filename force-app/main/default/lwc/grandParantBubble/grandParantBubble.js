@@ -8,7 +8,7 @@ export default class GrandParantBubble extends LightningElement {
 handleclickevent(event)
 {
 
-this.valuefromchild=event.details;
+this.valuefromchild=event.detail;
 
 
 }
