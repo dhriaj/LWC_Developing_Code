@@ -16,7 +16,7 @@ this.assignrecord = event.target.value;
 const txtboxvalue=this.assignrecord;
 const inputtext = new CustomEvent('inputtext',{
 bubbles :true,
-composed : false,
+composed : true,
 detail : txtboxvalue
 });
 this.dispatchEvent(inputtext);
