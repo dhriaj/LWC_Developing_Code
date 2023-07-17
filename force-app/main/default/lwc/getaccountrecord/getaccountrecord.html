@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : Dheeraj Sharma
+  @group             : 
+  @last modified on  : 07-17-2023
+  @last modified by  : Dheeraj Sharma
+-->
+<template>
+ <lightning-card title="Get the Account Record">
+<lightning-input label="Enter the Account Namer" onchange={onchnage}></lightning-input>
+<lightning-button lable="Insert record" type="text" onclick={onclick}></lightning-button>
+<div>
+ <template for:each={apirecord} for:item="record">
+<p key={record.id}>Name : {record.name} </p>
+ </template>
+</div>
+</lightning-card>   
+</template>

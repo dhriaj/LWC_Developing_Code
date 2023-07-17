@@ -1,39 +1,38 @@
-import { LightningElement,api , wire} from 'lwc';
-import recordinsert from '@salesforce/apex/Contactrecord.recordinsert';
+import { LightningElement,api } from 'lwc';
+import recordinsert from '@salesforce/apex/contactrecord.recordinsert';
 export default class Contactinsertrecord extends LightningElement {
 
 @api recordId;
-@api inpurtname
-@api email;
-
-@wire(recordinsert ,({accountid : `$recordId` , lastname :this.inpurtname , email:this.email}))
-wiraccount({data,error})
-{
-
- if(data)
-    {
- 
-        this.recordadd=data;
-    }
-else if(error)
-{
-
-    console.log("Error");
-}
-
-}
-
-setlastname=(event)=>{
+inpurtname;
+email;
+recordadd;
+setlastname=event=>{
     
-// eslint-disable-next-line @lwc/lwc/no-api-reassignments
-this.inpurtname = event.target.values;
 
+this.inpurtname = event.target.value;
+console.log('inpurtname'+this.inpurtname);
 }
 
-setemail=(event)=>{
+setemail=event=>{
     
-// eslint-disable-next-line @lwc/lwc/no-api-reassignments
-this.email=event.target.value;
+
+this.email=event.target.value; 
+console.log('email'+this.email);
+     }
+
+     onlickj()
+     {
+        recordinsert({accountid : this.recordId, lastname: this.inpurtname ,email : this.email})
+        .then((result)=>{
+            console.log('print rtecord'+ JSON.stringify(result));
+          this.recordadd=result;
+
+        })
+        .catch(() =>{
+console.error("error");
+
+        })
+
      }
     
 
