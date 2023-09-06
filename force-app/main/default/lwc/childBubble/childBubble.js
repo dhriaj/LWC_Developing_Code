@@ -7,7 +7,7 @@ export default class ChildBubble extends LightningElement {
 
     eventchnage(event)
     {
-this.assignrecord = event.target.value;//Test Case/////
+this.assignrecord = event.target.value;//Test Case
 
     }
 
